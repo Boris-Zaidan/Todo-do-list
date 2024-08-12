@@ -14,7 +14,7 @@
 
 </head>
 <body>
-  <div class="todo-container">
+  <main class="todo-container">
     <header>
       <h1>Lista de Tarefas</h1>
     </header>
@@ -25,8 +25,9 @@
           type="text"
           id="todo-input"
           placeholder="O que você vai fazer?"
+          aria-label="Campo para adicionar nova tarefa"
         />
-        <button type="submit">
+        <button type="submit" aria-label="Adicionar tarefa">
           <i class="fa-thin fa-plus"></i>
         </button>
       </div>
@@ -34,26 +35,26 @@
     <form id="edit-form" class="hide">
       <p>Edite sua tarefa</p>
       <div class="form-control">
-        <input type="text" id="edit-input" />
-        <button type="submit">
+        <input type="text" id="edit-input"  placeholder="Edite sua tarefa..." aria-label="Campo para editar tarefa" />
+        <button type="submit" aria-label=" confirmar sua edição">
           <i class="fa-solid fa-check-double"></i>
         </button>
       </div>
-      <button id="cancel-edit-btn">Cancelar</button>
+      <button id="cancel-edit-btn"  type="button"arial-label="Cancelar edição">Cancelar</button>
     </form>
     <div id="toolbar">
       <div id="search">
         <h4>Pesquisar:</h4>
         <form>
-          <input type="text" id="search-input" placeholder="Buscar..." />
-          <button id="erase-button">
+          <input type="text" id="search-input" placeholder="Buscar..." aria-label="Pesquisar tarefa"/>
+          <button id="erase-button"  type="button" aria-label="Cancelar edição">
             <i class="fa-solid fa-delete-left"></i>
           </button>
         </form>
       </div>
       <div id="filter">
         <h4>Filtrar:</h4>
-        <select id="filter-select">
+        <select id="filter-select" aria-label="Filtrar tarefas">
           <option value="all">Todos</option>
           <option value="done">Feitos</option>
           <option value="todo">A fazer</option>
@@ -63,18 +64,18 @@
     <div id="todo-list">
         <div class="todo">
         <h3>Estou fazendo algo aqui...</h3>
-        <button class="finish-todo">
+        <button class="finish-todo" aria-label="Marcar como Feito">
           <i class="fa-solid fa-check"></i>
         </button>
-        <button class="edit-todo">
+        <button class="edit-todo" aria-label="Editar tarefa">
           <i class="fa-solid fa-pen"></i>
         </button>
-        <button class="remove-todo">
+        <button class="remove-todo" aria-label="Remover tarefa">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 
 </html>
