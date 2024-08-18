@@ -162,7 +162,7 @@ select {
 
 @media screen and (max-width: 600px) {
   .todo-container {
-    max-width: 90vw;
+    max-width: 95vw;
     max-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -171,7 +171,7 @@ select {
   }
 
   .todo-container header {
-    text-align: center;
+    margin: 0 auto;
     padding: 0 .3rem .3rem;
     border-bottom: 0.063rem solid #ccc;
     font-size: .8rem;
