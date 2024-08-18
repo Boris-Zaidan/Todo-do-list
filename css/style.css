@@ -32,7 +32,7 @@ button:hover {
   background-color: #102f5e;
 }
 
-button:hover > i {
+button:hover>i {
   color: #fff;
 }
 
@@ -158,4 +158,28 @@ select {
   color: #fff;
   text-decoration: line-through;
   font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-container {
+    max-width: 90vw;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+
+  .todo-container header {
+    text-align: center;
+    padding: 0 .3rem .3rem;
+    border-bottom: 0.063rem solid #ccc;
+    font-size: .8rem;
+  }
+
+
+
+
+
+
 }
